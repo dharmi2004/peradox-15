@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerText VS innerHTML</title>
+</head>
+
+<body>
+    <h1 style="color:rgb(233, 77, 186)">That is my website</h1>
+
+
+    <div id="test">
+
+        The following element contains some
+
+        <codes>code</codes> and
+
+        <italic>some text</italic>.
+
+    </div>
+
+    <p></p>
+
+    <button onClick="innerHTMLFn()">
+
+        innerHTML
+
+    </button>
+
+    <button onClick="innerTextFn()">
+
+        innerText
+
+    </button>
+
+    <p id="op"></p>
+
+
+    <script>
+
+        function innerTextFn() {
+
+            let x = document.getElementById('test');
+
+            alert(x.innerText);
+
+        }
+
+
+        function innerHTMLFn() {
+
+            let x = document.getElementById('test');
+
+            alert(x.innerHTML);
+
+        }
+
+    </script>
+</body>
+
+</html>
